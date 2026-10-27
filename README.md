@@ -88,7 +88,6 @@ Muestra la imagen del NAO con tu esqueleto dibujado y los ángulos calculados. S
 - **`mediapipe has no attribute 'solutions'`**: instala la versión fijada (`pip install mediapipe==0.10.14`).
 - **`Temporary failure in name resolution` al iniciar**: falta internet para descargar el modelo (ver instalación).
 - **La terminal 2 imprime solo una vez**: quedaron archivos viejos en el buffer del NAO. Vacíalo con `rm /home/nao/imitate/buffer_images/*` y reinicia `capture.py`.
-- **`Non-ASCII character` en el NAO**: Python 2 no acepta acentos sin `# -*- coding: utf-8 -*-` en la primera línea.
 - **`REMOTE HOST IDENTIFICATION HAS CHANGED`**: borra la huella vieja con `ssh-keygen -R IP_DEL_NAO`.
 - **El brazo no baja o se va hacia atrás**: ajusta `FLIP_DEPTH` y `MIRROR_MODE`.
 
